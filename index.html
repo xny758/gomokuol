@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联机五子棋游戏</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <h1>联机五子棋游戏</h1>
+    <div id="game-status">等待游戏开始...</div>
+    <div id="current-player"></div>
+    <div id="game-actions">
+        <button id="new-game">新建游戏</button>
+        <input type="text" id="game-id-input" placeholder="输入游戏ID">
+        <button id="join-game">加入游戏</button>
+    </div>
+    <div id="game-board"></div>
+    <script src="script.js"></script>
+</body>
+</html>
